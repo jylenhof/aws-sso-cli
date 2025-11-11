@@ -12,15 +12,17 @@
         Note: You no longer need to install the hombrew tap as `aws-sso-cli` is
         now part of [homebrew-core](
         https://github.com/Homebrew/homebrew-core/blob/master/Formula/a/aws-sso-cli.rb).
-* Option 4: Build from source:
+* Option 4: Install using [mise](https://github.com/jdx/mise)
+    1. Run `mise use -g aws-sso@latest`
+* Option 5: Build from source:
     1. Install [GoLang](https://golang.org) v1.22+ and GNU Make
-    1. Clone this repo
-    1. Run `make` (or `gmake` for GNU Make)
-    1. Your binary will be created in the `dist` directory
-    1. Run `make install` to install in /usr/local/bin
-* Option 5: `go install`:
+    2. Clone this repo
+    3. Run `make` (or `gmake` for GNU Make)
+    4. Your binary will be created in the `dist` directory
+    5. Run `make install` to install in /usr/local/bin
+* Option 6: `go install`:
     1. Install [GoLang](https://golang.org) v1.22+ and GNU Make
-    1. `go install github.com/synfinatic/aws-sso-cli/cmd/aws-sso@latest`
+    2. `go install github.com/synfinatic/aws-sso-cli/cmd/aws-sso@latest`
 
 Note: macOS binaries must be build on macOS to enable Keychain support.
 
